@@ -12,10 +12,10 @@ test('checking object properties', () => {
     type: 'Bowman',
     health: 100,
     level: 1,
-    attack: 25,
-    defence: 25,
+    attack: undefined,
+    defence: undefined,
   };
-  const player = new Character('Anna', 'Bowman', 100, 1, 25, 25);
+  const player = new Character('Anna', 'Bowman', 100, 1, undefined, undefined);
   expect(player).toEqual(sample);
 });
 
